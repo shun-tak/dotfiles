@@ -1,0 +1,18 @@
+[user]
+	name = shun_tak
+	email = twitter@shun_tak
+[color]
+	ui = true
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	l = log
+	ls = log --stat
+	lp = log -p
+	lo = log --pretty=format:'%ad %C(yellow)%h %Creset%an: %s' --date=short
+	lg = log --graph --pretty=format:'%cd %C(yellow)%h %Creset%an: %s' --date=short
+	df = diff HEAD
+	dm = diff master
+	cancel = reset --soft HEAD^
