@@ -109,12 +109,15 @@
 
 ;;; スペルチェック
 ;; ispellの代わりにaspellを使う
-(setq ispell-program-name "/usr/local/bin/aspell")
+;; M-$で現在の単語のみスペルチェック
+;; M-x ispell で文書全体のスペルチェック
+(setq ispell-program-name "aspell")
 ;; スペルチェックには英語の辞書を使う
 (setq ispell-dictionary "american")
 
 ;;; フォント
-(create-fontset-from-ascii-font "Inconsolata-12:weight=normal:slant=normal" nil "myfavoritefontset")
+(create-fontset-from-ascii-font
+ "Inconsolata-12:weight=normal:slant=normal" nil "myfavoritefontset")
 (set-fontset-font "fontset-myfavoritefontset"
                   'japanese-jisx0208
                   (font-spec :family "TakaoExGothic" :size 12)
@@ -163,8 +166,10 @@
 
 ;;; パッケージマネージャ
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 
