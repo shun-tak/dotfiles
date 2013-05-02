@@ -16,3 +16,5 @@
 	df = diff HEAD
 	dm = diff master
 	cancel = reset --soft HEAD^
+[core]
+	editor = emacs
