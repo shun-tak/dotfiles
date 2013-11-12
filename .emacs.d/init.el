@@ -144,7 +144,8 @@
          (height . 55)   ; フレーム高(文字数)
          ) initial-frame-alist))
 ;; カラーテーマ
-(load-theme 'tango-dark t)
+(when (>= emacs-major-version 24)
+  (load-theme 'tango-dark t))
 
 ;;; PATHの追加
 (dolist (dir (list
