@@ -4,8 +4,9 @@
 [color]
 	ui = true
 [alias]
-	st = status
+	st = status -sb
 	ci = commit
+	ciam = commit --amend
 	co = checkout
 	br = branch
 	l = log
@@ -18,3 +19,6 @@
 	cancel = reset --soft HEAD^
 [core]
 	editor = emacs
+	excludesfile = ~/.gitignore
+[push]
+	default = upstream
