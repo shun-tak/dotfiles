@@ -17,6 +17,7 @@
 	df = diff HEAD
 	dm = diff master
 	cancel = reset --soft HEAD^
+	sm = submodule
 [core]
 	editor = emacs
 	excludesfile = ~/.gitignore
