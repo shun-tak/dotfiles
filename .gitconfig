@@ -18,6 +18,7 @@
 	dm = diff master
 	cancel = reset --soft HEAD^
 	sm = submodule
+	smfe = submodule foreach
 [core]
 	editor = emacs
 	excludesfile = ~/.gitignore
