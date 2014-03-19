@@ -25,3 +25,7 @@
 	excludesfile = ~/.gitignore
 [push]
 	default = upstream
+[merge]
+	ff = false
+[pull]
+	rebase = true
