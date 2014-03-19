@@ -23,8 +23,6 @@
 [core]
 	editor = emacs
 	excludesfile = ~/.gitignore
-[push]
-	default = upstream
 [merge]
 	ff = false
 [pull]
