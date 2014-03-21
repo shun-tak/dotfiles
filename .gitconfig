@@ -23,6 +23,8 @@
 [core]
 	editor = emacs
 	excludesfile = ~/.gitignore
+[push]
+	default = simple
 [merge]
 	ff = false
 [pull]
