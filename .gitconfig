@@ -20,6 +20,7 @@
 	cancel = reset --soft HEAD^
 	sm = submodule
 	smfe = submodule foreach
+	spl = !git stash && git pull && git stash pop
 [core]
 	editor = emacs
 	excludesfile = ~/.gitignore
