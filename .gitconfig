@@ -15,6 +15,7 @@
 	lp = log -p
 	lo = log --pretty=format:'%ad %C(yellow)%h %Creset%an: %s' --date=short
 	lg = log --graph --pretty=format:'%cd %C(yellow)%h %Creset%an: %s' --date=short
+	last = log -1 HEAD
 	df = diff HEAD
 	dm = diff master
 	cancel = reset --soft HEAD^
