@@ -22,6 +22,7 @@
 	cancel = reset --soft HEAD^
 	sm = submodule
 	smfe = submodule foreach
+	ft = fetch
 	spl = !git stash && git pull && git stash pop
 [core]
 	editor = emacs
