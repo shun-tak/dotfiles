@@ -119,15 +119,6 @@
 (when (>= emacs-major-version 23)
 ;; アスキー
 (set-face-attribute 'default nil :family "Anonymous Pro" :height 140)
-;; 日本語
-;; 日本語をTakaoゴシックにする
-(set-fontset-font "fontset-default"
-                  'japanese-jisx0208
-                  '("TakaoGothic"))
-;; 半角カナをTakaoゴシックにする
-(set-fontset-font "fontset-default"
-                  'katakana-jisx0201
-                  '("TakaoGothic"))
 ;; フォントサイズのリスケール
 ;; アスキーと日本語を等幅にする
 (setq face-font-rescale-alist
