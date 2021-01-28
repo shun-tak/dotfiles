@@ -5,21 +5,12 @@
 	ui = true
 [alias]
 	st = status -sb
-	ci = commit
 	cm = commit -m
 	ciam = commit --amend
-	cp = cherry-pick
 	co = checkout
 	br = branch
 	l = log
-	ls = log --stat
-	lp = log -p
-	lo = log --pretty=format:'%ad %C(yellow)%h %Creset%an: %s' --date=short
-	lg = log --graph --pretty=format:'%cd %C(yellow)%h %Creset%an: %s' --date=short
-	last = log -1 HEAD
 	df = diff HEAD
-	dm = diff master
-	cancel = reset --soft HEAD^
 	sm = submodule
 	smfe = submodule foreach
 	fp = fetch --prune
